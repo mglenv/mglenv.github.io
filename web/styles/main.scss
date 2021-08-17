@@ -1,0 +1,120 @@
+$main-color: #DEE2E6;
+$seconary-color: #495057;
+$font-color: #F8F9FA;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+body{
+    min-height: 120vh;
+    background-color: $main-color;
+}
+
+
+
+
+header{
+    background-color: $seconary-color ;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .icon{ 
+        svg{
+            fill: $main-color;
+        }
+        &--left{
+        padding-left: 2rem;
+        }
+        &--right{
+            padding-right:2rem;
+        }
+    }
+    h1{
+        color: $main-color;
+        font-size: 2.5rem;
+        padding-right: 2rem;
+        font-weight: bold;
+    }
+}
+
+.side-menu{
+    display: block;
+    width: 100vw;
+    height:100vh;
+    background-color: rgba($color: #616060, $alpha: .5);
+    &__content{
+        width: 25vw;
+        height:100vh;
+        background-color: $seconary-color;
+        color: $font-color;
+        
+        &--right{
+            float:right;
+            height: 25vh;
+        }
+        ul{
+            margin:0;
+            padding: 0;
+            text-indent: 0;
+            list-style-type: none;
+        } 
+        li{
+            padding-top:2rem;
+            padding-left: 1rem;
+        }
+        a{
+            font-size: 1.5rem;
+            color: $font-color;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+            opacity: .6;
+            &:hover,&:active{
+                opacity: 1;
+                
+            }
+        }
+    }
+    &__login{
+        color: $font-color;
+        height:100%;
+        width: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        input{
+            height: 25%;
+            width: auto;
+            background-color: $main-color;
+            border: 0;
+            padding: 0 .5rem 0 .5rem;
+            box-shadow: none;
+        }
+        
+    }
+    &--hidden{
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+    
+}
+
+
+nav{
+    
+}
+

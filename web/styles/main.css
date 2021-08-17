@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+body {
+  min-height: 120vh;
+  background-color: #DEE2E6;
+}
+
+header {
+  background-color: #495057;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .icon svg {
+  fill: #DEE2E6;
+}
+header .icon--left {
+  padding-left: 2rem;
+}
+header .icon--right {
+  padding-right: 2rem;
+}
+header h1 {
+  color: #DEE2E6;
+  font-size: 2.5rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.side-menu {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(97, 96, 96, 0.5);
+}
+.side-menu__content {
+  width: 25vw;
+  height: 100vh;
+  background-color: #495057;
+  color: #F8F9FA;
+}
+.side-menu__content--right {
+  float: right;
+  height: 25vh;
+}
+.side-menu__content ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+.side-menu__content li {
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+.side-menu__content a {
+  font-size: 1.5rem;
+  color: #F8F9FA;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+}
+.side-menu__content a:hover, .side-menu__content a:active {
+  opacity: 1;
+}
+.side-menu__login {
+  color: #F8F9FA;
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.side-menu__login input {
+  height: 25%;
+  width: auto;
+  background-color: #DEE2E6;
+  border: 0;
+  padding: 0 0.5rem 0 0.5rem;
+  box-shadow: none;
+}
+.side-menu--hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/*# sourceMappingURL=main.css.map */

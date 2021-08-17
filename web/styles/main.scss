@@ -57,10 +57,11 @@ header{
 }
 
 .side-menu{
-    display: block;
+    position: absolute;
     width: 100vw;
     height:100vh;
-    background-color: rgba($color: #616060, $alpha: .5);
+    background-color: rgba($color: #616060, $alpha: .7);
+    z-index:3;
     &__content{
         width: 25vw;
         height:100vh;

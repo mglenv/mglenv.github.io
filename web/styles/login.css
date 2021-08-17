@@ -46,10 +46,11 @@ header h1 {
 }
 
 .side-menu {
-  display: block;
+  position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(97, 96, 96, 0.5);
+  background-color: rgba(97, 96, 96, 0.7);
+  z-index: 3;
 }
 .side-menu__content {
   width: 25vw;

@@ -129,3 +129,15 @@ nav{
     
 }
 
+
+@media (max-width: 415px){
+
+    .side-menu{
+        &__content{
+            width: 75vw;
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+}

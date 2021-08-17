@@ -60,6 +60,7 @@
         height: 25%;
         
         
+        
     }
     label{
         display: flex;
@@ -90,6 +91,35 @@
         transition: .3s all ease-in-out;
         &:hover, &:focus{
             border: 2px solid $dark;
+        }
+    }
+}
+
+@media (max-width: 415px){
+    .content{
+        width: auto;
+        margin: 20% 10%;
+        ul{
+            height: 60%;
+        }
+        label{
+            justify-content: center;
+        }
+        input{
+            width: 80%;
+        }
+        li{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-align: center;
+        }
+        &__decoration{
+            
+            width:80%;
+            margin: 20% 10%;
         }
     }
 }

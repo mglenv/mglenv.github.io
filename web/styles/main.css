@@ -109,4 +109,13 @@ header h1 {
   width: 1px;
 }
 
+@media (max-width: 415px) {
+  .side-menu__content {
+    width: 75vw;
+  }
+  .side-menu__content a {
+    font-size: 2rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

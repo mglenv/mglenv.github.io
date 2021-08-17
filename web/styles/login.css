@@ -12,6 +12,15 @@ body {
   background-color: #DEE2E6;
 }
 
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+
 header {
   background-color: #495057;
   height: 10vh;
@@ -100,35 +109,89 @@ header h1 {
 }
 
 .content {
-  background: rgba(73, 80, 87, 0.85);
+  background: #495057;
   height: 50vh;
   width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10% 25%;
-  border-radius: 9.5%;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  color: #212529;
+}
+.content__decoration {
+  margin: 10% 25%;
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+  transform: 1, 1;
+  transition: 0.3s all ease-in-out;
+}
+.content__decoration--dark {
+  left: 5%;
+  top: 5%;
+  z-index: -2;
+  background-color: #212529;
+}
+.content__decoration--light {
+  left: 2.5%;
+  top: 7.5%;
+  z-index: -1;
+  background-color: #adb5bd;
+}
+.content icon {
+  height: 15%;
+}
+.content icon svg {
+  fill: #212529;
 }
 .content input {
+  height: 50%;
   background-color: #DEE2E6;
-  border: 0;
+  border: 1px solid black;
   padding: 0 0.5rem 0 0.5rem;
   box-shadow: none;
-  height: 50%;
-  text-align: center;
 }
 .content ul {
+  height: 75%;
   margin: 0;
   padding: 0;
   text-indent: 0;
   list-style-type: none;
-  height: 50%;
 }
 .content li {
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  height: 50%;
+  height: 25%;
+}
+.content label {
+  display: flex;
+  height: 100%;
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  align-items: flex-end;
+  padding-bottom: 0.0625rem;
+  -webkit-text-stroke: 1px black;
+}
+.content a {
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0.25rem;
+  color: #adb5bd;
+}
+.content button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  outline: none;
+  font: inherit;
+  font-weight: 700;
+  background: #adb5bd;
+  color: #212529;
+  transition: 0.3s all ease-in-out;
+}
+.content button:hover, .content button:focus {
+  border: 2px solid #212529;
 }
 
 /*# sourceMappingURL=login.css.map */

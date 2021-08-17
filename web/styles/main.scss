@@ -1,6 +1,8 @@
 $main-color: #DEE2E6;
-$seconary-color: #495057;
+$secondary-color: #495057;
 $font-color: #F8F9FA;
+$dark: #212529;
+$medium-gray: #adb5bd;
 
 *{
     margin: 0;
@@ -16,11 +18,19 @@ body{
     background-color: $main-color;
 }
 
-
+//reset
+button{
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none
+}
 
 
 header{
-    background-color: $seconary-color ;
+    background-color: $secondary-color ;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -54,7 +64,7 @@ header{
     &__content{
         width: 25vw;
         height:100vh;
-        background-color: $seconary-color;
+        background-color: $secondary-color;
         color: $font-color;
         
         &--right{

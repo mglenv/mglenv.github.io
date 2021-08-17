@@ -12,6 +12,15 @@ body {
   background-color: #DEE2E6;
 }
 
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+
 header {
   background-color: #495057;
   height: 10vh;

@@ -1,33 +1,95 @@
 @import "main";
+
 .content{
-    background: rgba($seconary-color, .85);
+    background: rgba($secondary-color, 1);
     height: 50vh;
     width: 50vw;
     display:flex;
     flex-direction: column;
     align-items: center;
     margin: 10% 25%;
-    border-radius: 9.5%;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    color: $dark;
+    
+    
+    &__decoration{
+        margin: 10% 25%;
+        position:absolute;
+        height:50vh;
+        width: 50vw;
+        transform: (1,1);
+        transition: .3s all ease-in-out;
+        &--dark{
+            left: 5%;
+            top: 5%;
+            z-index: -2;
+            background-color: $dark;
+        }
+        &--light{
+            left: 2.5%;
+            top: 7.5%;
+            z-index: -1;
+            background-color: $medium-gray;
+        }
+    }
+    icon{
+        height: 15%;
+        svg{
+            fill: $dark;
+        }
+    }
     input{
+        height: 50%;
         background-color: $main-color;
-        border: 0;
+        border: 1px solid black;
         padding: 0 .5rem 0 .5rem;
         box-shadow: none;
-        height: 50%;
-        text-align: center;
         
     }
     ul{
+        height: 75%;
         margin:0;
         padding: 0;
         text-indent: 0;
         list-style-type: none;
-        height: 50%;
+       
+        
+        
     } 
     li{
-        padding-top:.5rem;
-        padding-left: .5rem;
-        height: 50%;
+        height: 25%;
+        
+        
+    }
+    label{
+        display: flex;
+        height: 100%;
+        text-align: left;
+        font-weight: 700;
+        font-size: 2rem;
+        align-items: flex-end;
+        padding-bottom: .0625rem;
+        -webkit-text-stroke: 1px black;
+    }
+    a{
+        height: 10%;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: .25rem;
+        color: $medium-gray;
+    }
+    button{
+        font-size: 2rem;
+        padding: .5rem;
+        border: 2px solid transparent;
+        outline: none;
+        font: inherit;
+        font-weight: 700;
+        background: $medium-gray;
+        color: $dark;
+        transition: .3s all ease-in-out;
+        &:hover, &:focus{
+            border: 2px solid $dark;
+        }
     }
 }

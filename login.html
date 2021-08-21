@@ -15,12 +15,12 @@
 <body>
     <header>
         <div class="icon icon--left" id="logo-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                 <path
                     d="m20.895 7.553-2-4A1.001 1.001 0 0 0 18 3h-5c-.379 0-.725.214-.895.553L10.382 7H6c-.379 0-.725.214-.895.553l-2 4a1 1 0 0 0 0 .895l2 4c.17.338.516.552.895.552h4.382l1.724 3.447A.998.998 0 0 0 13 21h5c.379 0 .725-.214.895-.553l2-4a1 1 0 0 0 0-.895L19.118 12l1.776-3.553a1 1 0 0 0 .001-.894zM13.618 5h3.764l1.5 3-1.5 3h-3.764l-1.5-3 1.5-3zm-8.5 7 1.5-3h3.764l1.5 3-1.5 3H6.618l-1.5-3zm12.264 7h-3.764l-1.5-3 1.5-3h3.764l1.5 3-1.5 3z" />
             </svg>
         </div>
-        <h1>The Hive</h1>
+        <h1 class="title"><a href="index.html">The Hive</a></h1>
         <div class="icon icon--right" id="profile-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
                 class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -31,7 +31,7 @@
         </div>
     </header>
     <div class="side-menu side-menu--hidden" id="left-side-menu">
-        <div class="side-menu__content">
+        <div class="side-menu__content side-menu__content--left">
             <nav>
                 <ul>
                     <li><a href="#">Food and Drink</a></li>
@@ -47,28 +47,26 @@
     <div class="side-menu side-menu--hidden" id="right-side-menu">
         <div class="side-menu__content side-menu__content--right">
             <div class="side-menu__login">
-                <input type="text" name="" id="" placeholder="Email">
-                <input placeholder="Password" type="password" id="pw-input">
+                <input type="text" class="content__input"name="" id="" placeholder="Email">
+                <input placeholder="Password" class="content__input" type="password" id="pw-input">
+                <button class="content__button button">Log In</button>
             </div>
         </div>
     </div>
     <div class="content">
-        <div class="content__decoration content__decoration--dark"></div>
-        <div class="content__decoration content__decoration--light"></div>
-        <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill=#212529 width="64" height="64" viewBox="0 0 24 24">
+        <div class="content__bg"></div>
+        <div class="content__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
                 <path
                     d="m20.895 7.553-2-4A1.001 1.001 0 0 0 18 3h-5c-.379 0-.725.214-.895.553L10.382 7H6c-.379 0-.725.214-.895.553l-2 4a1 1 0 0 0 0 .895l2 4c.17.338.516.552.895.552h4.382l1.724 3.447A.998.998 0 0 0 13 21h5c.379 0 .725-.214.895-.553l2-4a1 1 0 0 0 0-.895L19.118 12l1.776-3.553a1 1 0 0 0 .001-.894zM13.618 5h3.764l1.5 3-1.5 3h-3.764l-1.5-3 1.5-3zm-8.5 7 1.5-3h3.764l1.5 3-1.5 3H6.618l-1.5-3zm12.264 7h-3.764l-1.5-3 1.5-3h3.764l1.5 3-1.5 3z" />
             </svg>
         </div>
-        <ul>
-            <li><label for="email-input">E-mail</label></li>
-            <li><input type="text" class="email" placeholder=""></li>
-            <li><label for="password-input">Password</label></li>
-            <li><input type="password" class="pw" placeholder=""></li>
-        </ul>
 
-        <button>Login In</button>
+        <input type="text" class="content__input" placeholder="Email">
+        <input type="password" class="content__input" placeholder="Password">
+
+
+        <button class="content__button button">Login In</button>
         <a href="#">Forgot Login Information?</a>
 
     </div>

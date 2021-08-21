@@ -1,118 +1,120 @@
-$main-color: #DEE2E6;
-$secondary-color: #495057;
-$font-color: #F8F9FA;
-$dark: #212529;
-$medium-gray: #adb5bd;
+$darkest: #1e2328;
+$darker: #2a2e34;
+$dark: #3b3f46;
+$light: #f5a302;
+$lighter: #f5b301;
+$lightest: #fed053;
 
-*{
+$font-color: $darkest;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    &:focus {
+        outline: none;
+    }
 }
 
-body{
+body {
     min-height: 120vh;
-    background-color: $main-color;
+    background-color: rgba($dark, 0.9);
 }
 
-//reset
-button{
-    padding: 0;
-    border: none;
-    outline: none;
-    font: inherit;
-    color: inherit;
-    background: none
-}
-
-
-header{
-    background-color: $secondary-color ;
+header {
+    background-color: $dark;
     height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
-    .icon{ 
-        svg{
-            fill: $main-color;
+    justify-content: space-around;
+    gap: 1rem;
+    .icon {
+        svg {
+            fill: $lighter;
+            transition: 0.3s all ease-in-out;
+            &:hover,
+            &:active {
+                fill: $darkest;
+            }
         }
-        &--left{
-        padding-left: 2rem;
-        }
-        &--right{
-            padding-right:2rem;
+        &--left {
+            transform: rotate(90deg);
         }
     }
-    h1{
-        color: $main-color;
+    .title a {
+        color: $lighter;
         font-size: 2.5rem;
-        padding-right: 2rem;
         font-weight: bold;
+        text-decoration: none;
     }
 }
 
-.side-menu{
+.side-menu {
     position: absolute;
     width: 100vw;
-    height:100vh;
-    background-color: rgba($color: #616060, $alpha: .7);
-    z-index:3;
-    &__content{
-        width: 25vw;
-        height:100vh;
-        background-color: $secondary-color;
-        color: $font-color;
-        
-        &--right{
-            float:right;
-            height: 25vh;
+    height: 100vh;
+    background-color: rgba($color: $dark, $alpha: 0.7);
+    z-index: 3;
+    &__content {
+        width: 50vw;
+        height: 100vh;
+        background-color: $dark;
+        color: $darkest;
+
+        &--right {
+            float: right;
+            height: 40vh;
         }
-        ul{
-            margin:0;
+        &--left {
+            border-right: 1px solid black;
+        }
+        ul {
+            margin: 0;
             padding: 0;
             text-indent: 0;
             list-style-type: none;
-        } 
-        li{
-            padding-top:2rem;
+        }
+        li {
+            padding-top: 2rem;
             padding-left: 1rem;
         }
-        a{
+        a {
             font-size: 1.5rem;
-            color: $font-color;
+            color: $lightest;
             text-decoration: none;
-            transition: all .3s ease-in-out;
-            opacity: .6;
-            &:hover,&:active{
-                opacity: 1;
-                
+            transition: all 0.3s ease-in-out;
+            opacity: 0.6;
+            &:hover,
+            &:active {
+                color: $light;
             }
         }
     }
-    &__login{
-        color: $font-color;
-        height:100%;
+    &__login {
+        background-color: $dark;
+        height: 100%;
         width: auto;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        input{
-            height: 25%;
-            width: auto;
-            background-color: $main-color;
-            border: 0;
-            padding: 0 .5rem 0 .5rem;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-bottom-left-radius: 0.5rem;
+        input {
+            height: 20%;
+            background-color: $darker;
+            margin: 5% 10%;
+            width: 80%;
             box-shadow: none;
+            color: $lightest;
+            font-size: 1.5rem;
         }
-        
+        button {
+            width: 60%;
+        }
     }
-    &--hidden{
+    &--hidden {
         clip: rect(0 0 0 0);
         clip-path: inset(50%);
         height: 1px;
@@ -121,22 +123,18 @@ header{
         white-space: nowrap;
         width: 1px;
     }
-    
 }
-
-
-nav{
-    
+nav {
 }
-
-
-@media (max-width: 415px){
-
-    .side-menu{
-        &__content{
+@media (max-width: 415px) {
+    .side-menu {
+        &__content {
             width: 75vw;
-            a{
+            a {
                 font-size: 2rem;
+            }
+            &--right {
+                height: 25vh;
             }
         }
     }

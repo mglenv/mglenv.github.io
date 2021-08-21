@@ -1,5 +1,4 @@
 
-
 var logo = document.getElementById("logo-icon");
 var profileIcon = document.getElementById("profile-icon");
 

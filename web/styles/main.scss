@@ -126,19 +126,7 @@ header {
 }
 nav {
 }
-@media (max-width: 415px) {
-    .side-menu {
-        &__content {
-            width: 75vw;
-            a {
-                font-size: 2rem;
-            }
-            &--right {
-                height: 25vh;
-            }
-        }
-    }
-}
+
 .content {
     background: rgba($darker, 1);
     border-radius: 32px;
@@ -264,5 +252,18 @@ nav {
         left: 26%;
         top: 28%;
         width: 50%;
+    }
+}
+@media (max-width: 415px) {
+    .side-menu {
+        &__content {
+            width: 75vw;
+            a {
+                font-size: 2rem;
+            }
+            &--right {
+                height: 25vh;
+            }
+        }
     }
 }
